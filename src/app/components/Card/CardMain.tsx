@@ -5,7 +5,7 @@ import { ButtonCustom } from '../Button/Button';
 
 export const CardMain = () => {
     const linkedin = 'https://www.linkedin.com/in/lucia-urrea/'
-    const linkedinImg = '/img/github.webp'
+    const linkedinImg = '/img/LinkendinLogo.svg'
     const linkedinDes = 'linkedid logo'
 
     return (<Card
@@ -23,7 +23,7 @@ export const CardMain = () => {
             <Button
                 shape="circle"
                 icon={<img
-                    src="/img/github.webp"
+                    src="/img/github.svg"
                     alt="GitHub Logo"
                     className={styles.customButtonImg}
                 />}
@@ -32,7 +32,7 @@ export const CardMain = () => {
             />
         </a>
                     
-        <ButtonCustom link={linkedin} pathImg={linkedinImg} descripImg={linkedinDes} />
+      {/* <ButtonCustom link={linkedin} pathImg={linkedinImg} descripImg={linkedinDes} />  */}
 
         <div className={styles.gridMain}>
             <Row>
