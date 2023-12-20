@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Nombre-de-la-fuente';
+    src: url('/public/font/DancingScript-VariableFont_wght.ttf') format('woff'); /* Ajusta la ruta y el formato según tus archivos */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    font-family: 'Dancing Script', cursive;
+}
+
+.text {
+    font-family: 'Dancing Script', cursive;
+    /* Otros estilos del texto */
+}
