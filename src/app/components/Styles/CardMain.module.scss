@@ -1,5 +1,19 @@
 /* Card.module.css */
 
+@font-face {
+    font-family: 'Dancing';
+    src: url('/public/font/Dancing.ttf') format('woff'); /* Ajusta la ruta y el formato según tus archivos */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halimun';
+    src: url('/font/Halimun.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .cardMainCustom {
     box-shadow: 0 0 100px rgba(201, 100, 0, 0.747);
     position: relative;
@@ -27,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2px;
+    margin: 4px;
 }
 
 .customButtonImg {
@@ -56,11 +70,11 @@
 
 .gridMain {
     display: grid;
-    grid-template-columns: 210px 350px;
+    grid-template-columns: 210px 550px;
     gap: 10px;
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 20%;
+    left: 20%;
 }
 
 .margenIzquierdo {
@@ -70,45 +84,34 @@
     padding-left: 30px; 
 }
 
+.titleCustom {
+    font-family: 'Halimun', sans-serif;
+    font-size: 55px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px rgb(141, 74, 2),
+                     2px 2px 1px rgb(153, 83, 2);
+}
+
 .textContainer {
-    text-align: left;
-    font-family: "Arial", sans-serif;
-    font-style: italic;
+    overflow-y: auto; 
+    max-height: 250px;
+    background-color: #ffffff45;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(111, 57, 2, 0.892);
 }
 
-.textContainer::before {
-    position: absolute;
-    width: 50px; /* Ajusta el tamaño del semicírculo según tus necesidades */
-    height: 100%;
-    background-color: lightblue; /* Igual que el color del avatar */
-    border-radius: 50% 0 0 50%;
-    left: -25px; /* Ajusta la posición izquierda para que coincida con el avatar */
-    top: 0;
+.textCustom {
+    margin: 3%;
+    text-align: justify;
+    font-family: 'Dancing', cursive;
+    font-size: 16px;
+
 }
 
-.prueba {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 
 .avatarContainer{
-    margin-right: 20px;
-}
-
-/* .prueba {
-    display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    margin-top: 20%;
 }
- */
-/* 
-.gridMain {
-    position: absolute;
-    top: 170px;
-    left: 350px;
-} */
