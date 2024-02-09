@@ -1,12 +1,28 @@
-import { CardMain } from './components/Card/CardMain'
+import CardMain from './components/CardMain'
 import styles from './page.module.css'
+import Head from 'next/head'
+import CardInfo from './components/CardInfo'
+import { useEffect, useState } from 'react'
 
-export default function Home() {
+export default async function Home() {
+  // Declaramos el estado con useState
+  // const [description, setDescription] = useState('profile');
+
+   // Marcar como Client Component usando useEffect
+  // useEffect(() => {
+    // console.log(description, ' hola soy description');
+    // Este efecto no hace nada, simplemente marca el componente como un "Client Component"
+  //}, []);
+
   return (
     <main className={styles.main}>
 
+      <Head>
+        <title>Mi Página Principal</title>
+      </Head>
 
       <CardMain />
+      
 
       <div className={styles.grid}>
         <a
@@ -14,6 +30,7 @@ export default function Home() {
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
+          // onClick={ () => setDescription("meli") }
         >
           <h2>
             Experiencia <span>-&gt;</span>
@@ -26,6 +43,7 @@ export default function Home() {
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
+          // onClick={ () => setDescription("b2b") }
         >
           <h2>
             Learn <span>-&gt;</span>
@@ -38,6 +56,8 @@ export default function Home() {
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
+          // onClick={ () => setDescription("ejercito") }
+
         >
           <h2>
             Templates <span>-&gt;</span>
@@ -55,7 +75,7 @@ export default function Home() {
             Deploy <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Instantly deploy your Next.js site to a shareable URL with Vercel. 
           </p>
         </a>
       </div>
