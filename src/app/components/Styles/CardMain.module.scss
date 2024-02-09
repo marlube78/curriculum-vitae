@@ -15,10 +15,21 @@
 }
 
 .cardMainCustom {
-    box-shadow: 0 0 100px rgba(201, 100, 0, 0.747);
+    box-shadow: 0 0 100px rgba(3, 0, 201, 0.747);
     position: relative;
     z-index: 1;
+    width: 1300;
+    height: 800; 
 }
+
+.cardMainImg{
+    width: 100%;
+    height: 900;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
 
 .avatarContainerLogoGit {
     position: relative;
@@ -51,32 +62,6 @@
     object-fit: cover;
 }
 
-.avatarContainerPhoto {
-    position: relative;
-}
-
-.avatarContainerPhoto {
-    position: absolute;
-    border-radius: 70%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
-}
-
-.avatarContainerPhoto {
-    box-shadow: 0 0 15px rgb(0, 0, 0);
-    display: block;
-    margin: 0 auto;
-}
-
-.gridMain {
-    display: grid;
-    grid-template-columns: 210px 550px;
-    gap: 10px;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-}
-
 .margenIzquierdo {
     border-left: 2px solid ; /* Establece un borde izquierdo de 2px sólido en color gris claro */
     border-radius: 0 50% 50% 0;
@@ -84,34 +69,74 @@
     padding-left: 30px; 
 }
 
-.titleCustom {
-    font-family: 'Halimun', sans-serif;
-    font-size: 55px;
-    text-transform: capitalize;
-    text-shadow: 1px 1px 1px rgb(141, 74, 2),
-                     2px 2px 1px rgb(153, 83, 2);
-}
+/* Card.module.css */
 
-.textContainer {
-    overflow-y: auto; 
-    max-height: 250px;
-    background-color: #ffffff45;
-    border-radius: 20px;
-    box-shadow: 0 0 50px rgba(111, 57, 2, 0.892);
-}
-
-.textCustom {
-    margin: 3%;
-    text-align: justify;
-    font-family: 'Dancing', cursive;
-    font-size: 16px;
-
-}
-
-
-
-.avatarContainer{
+@font-face {
+    font-family: "Dancing";
+    src: url("/public/font/Dancing.ttf") format("woff"); /* Ajusta la ruta y el formato según tus archivos */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Halimun";
+    src: url("/font/Halimun.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .gridMain {
+    display: grid;
+    grid-template-columns: 210px 550px;
+    gap: 10px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+  }
+  
+  .avatarContainer {
     justify-content: center;
     align-items: center;
     margin-top: 20%;
-}
+  }
+  
+  .avatarContainerPhoto {
+    position: relative;
+  }
+  
+  .avatarContainerPhoto {
+    position: absolute;
+    border-radius: 70%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+  }
+  
+  .avatarContainerPhoto {
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .titleCustom {
+    font-family: "Halimun", sans-serif;
+    font-size: 55px;
+    text-transform: capitalize;
+    color: #0a015b;
+    text-shadow: 1px 1px 1px rgb(84, 127, 255), 2px 2px 1px rgb(0, 18, 132);
+  }
+  
+  .textContainer {
+    overflow-y: auto;
+    max-height: 250px;
+    background-color: #ffffffae;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(2, 9, 111, 0.892);
+  }
+  
+  .textCustom {
+    margin: 3%;
+    text-align: justify;
+    font-family: "Dancing", cursive;
+    font-size: 17px;
+  }
+  
